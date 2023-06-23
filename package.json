@@ -5,10 +5,10 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"npm run client\"  \"npm run server\"",
-    "client":"serve -s build --prefix ./client",
-    "server": "node main.js",
-    "dev": "concurrently \"npm run client\"  \"npm run server\""
+    "start": "node main.js",
+    "client": "serve -s build --prefix ./client",
+    "server": "node main.js"
+    
   },
   "author": "bharath",
   "license": "ISC",
@@ -19,7 +19,6 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.3.0",
-    "concurrently": "^8.0.1",
     "morgan": "^1.10.0"
   },
   "engines": {
